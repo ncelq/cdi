@@ -38,7 +38,7 @@ public class Main {
                 Gson gson = new Gson();
                 Item item = gson.fromJson(obj.toString(), Item.class);
                 
-                File f = new File("/tmp/" + item.getCategoryId());
+                File f = new File("/mnt/disks/sdb/kaggle/test/" + item.getCategoryId());
                 if (!f.isDirectory()) {
                 		f.mkdirs();
                 }
